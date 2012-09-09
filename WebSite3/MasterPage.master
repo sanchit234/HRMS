@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 200px;
+            width: 201px;
+        }
+        .style2
+        {
+            height: 69px;
+            width: 1262px;
+        }
+    </style>
+</head>
+<body bgcolor="#009933" background="Images/backgroud.jpg">
+    <form id="form1" runat="server">
+    <p style="background-color: #99FF99; height: 200px; width: 1262px; text-align: justify;" 
+        align="center">
+        <asp:Image ID="Image1" runat="server" Height="200px" ImageAlign="Left" 
+            ImageUrl="Images/logo.jpg" Width="250px" />
+        <object type="application/x-shockwave-flash" 
+            
+            data="Images/devAnalogClock.swf" 
+            align="right" class="style1" height="200px" width="200px">
+            <param name="movie" value="F:\Users\San Man\Documents\Visual Studio 2008\WebSites\WebSite3\Images\devAnalogClock.swf" />
+            </object><br /><br /><br /><br /><br />
+
+    <div class="style2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>
